@@ -3,8 +3,15 @@ crop bounding-box containing car image in 200G vehicle dataset. [done]
 residual net with 50 layers classifying one image need about 500 ms in caffe.
 residual net with 34 layers classifying one image need about 150 ms in torch.
 
-sep29 - 
+sep29 - oct11
 nist tattoo detection experiment
     using resnet-18
     100 percent accuracy predicted by choosing best model after cross validation.
     after 90 epoc, 1 false prediction among 2349 images.
+
+attend ali guangzhou airport wifi prediction contest
+
+oct12 - 
+nist, flickr tattoo detection experiment
+    using resnet-18
+    after 20 epoches, top1 errors for each 5 fold are 4.850 6.200 5.450 5.250 4.600, therefore average top1 error is 

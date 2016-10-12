@@ -1,0 +1,12 @@
+for loop
+c++     
+    for (int i=0; i<n; ++i){
+    }
+python  
+    for i in xrange(n): 
+lua 
+    for i = 1,n do
+    end
+matlab  
+    for i = 1:n
+    end
