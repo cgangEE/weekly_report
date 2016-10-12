@@ -10,8 +10,18 @@ nist tattoo detection experiment
     after 90 epoc, 1 false prediction among 2349 images.
 
 attend ali guangzhou airport wifi prediction contest
+    season 1 date is from sep 28 to oct 23
 
 oct12 - 
 nist, flickr tattoo detection experiment
     using resnet-18
-    after 20 epoches, top1 errors for each 5 fold are 4.850 6.200 5.450 5.250 4.600, therefore average top1 error is 
+    after 20 epoches, top1 errors for each 5 fold are 4.850 6.200 5.450 5.250 4.600
+    therefore average top1 error is ?
+
+WAP onsite interview
+    prepare English resume
+    prepare oral English introduction
+        
+
+
+
