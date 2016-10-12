@@ -19,6 +19,7 @@ nist, flickr tattoo detection experiment
     therefore average top1 error is ?
 
 WAP onsite interview
+    date is on Friday, 14 oct
     prepare English resume
     prepare oral English introduction
         
