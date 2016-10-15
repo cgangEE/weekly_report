@@ -1,12 +1,29 @@
 for loop
+
+shell
+    for i in {1..100} 
+    do  
+        echo $i  
+    done  
+
+
 c++     
     for (int i=0; i<n; ++i){
+        printf("%d\n", i);
     }
+
+
 python  
     for i in xrange(n): 
+        print(i)
+
+
 lua 
     for i = 1,n do
+        print(i)
     end
+
+
 matlab  
     for i = 1:n
     end

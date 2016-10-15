@@ -12,17 +12,14 @@ nist tattoo detection experiment
 attend ali guangzhou airport wifi prediction contest
     season 1 date is from sep 28 to oct 23
 
+
 oct12 - 
 nist, flickr tattoo detection experiment
-    using resnet-18
-    after 20 epoches, top1 errors for each 5 fold are 4.850 6.200 5.450 5.250 4.600
-    therefore average top1 error is ?
+    resnet-18, flickr2349, epcho=20, LR=0.006, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=7.535%
 
-WAP onsite interview
-    date is on Friday, 14 oct
-    prepare English resume
-    prepare oral English introduction
-        
+    resnet-18, flickr2349, epcho=30, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=6.599%
 
+    resnet-34, flickr2349, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=5.705%
 
+    resnet-34, flickr2349, epcho=40, LR=0.00006, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=5.875%
 
