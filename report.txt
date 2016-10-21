@@ -24,6 +24,8 @@ nist, flickr tattoo detection experiment
     resnet-18, flickr10000, epcho=30, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=5.03%
     resnet-34, flickr10000, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=3.77%
     resnet-34, flickr10000, epcho=40, LR=0.00006, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=3.98%
+    resnet-50, flickr10000, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 1-fold test error rate=3%
+    resnet-101, flickr10000, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 1-fold test error rate=3.05%
 
     resnet-18, nist, epcho=20, LR=0.006, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=0.1704%
     resnet-18, nist, epcho=30, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=0.0852%
