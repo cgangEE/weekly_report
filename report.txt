@@ -13,7 +13,7 @@ attend ali guangzhou airport wifi prediction contest
     season 1 date is from sep 28 to oct 23
 
 
-oct12 - 
+oct12 - oct18
 nist, flickr tattoo detection experiment
     resnet-18, flickr2349, epcho=20, LR=0.006, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=7.535%
     resnet-18, flickr2349, epcho=30, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=6.599%
@@ -36,3 +36,9 @@ nist, flickr tattoo detection experiment
 
     resnet-34, flickr-nist, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=2.214%
 
+
+oct18 - 
+    TattDL tested flickr10000 fold1, detected 530 tattoo in 1148 tattoo images,
+    detected 9 tattoo in 852 non-tattoo images.
+    false negative rate is (1148-530)/1148 = 53.833%
+    false positive rate is 9/852 = 1.0563%
