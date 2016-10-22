@@ -7,6 +7,7 @@ shell
 
 
 
+
 c++     
     //for loop
     for (int i=0; i<n; ++i){
@@ -14,12 +15,19 @@ c++
     }
 
     
+    //start index
+    0
 
 
 python  
     # for loop
     for i in xrange(n): 
         print(i)
+
+
+    # start index
+    0
+
 
     # read file
     f = open(fileName)
@@ -38,10 +46,15 @@ lua
     end
 
 
+    --start index 
+    1
+
+
     --read file
     for line in io.lines(fileName) do 
         print(line)
     end
+
 
     --function
     function func(parameter)
@@ -50,6 +63,11 @@ lua
 
 
 matlab  
+    % for loop
     for i = 1:n
     end
+
+
+    % start index
+    1
 
