@@ -1,6 +1,8 @@
 find
+    find ./ -name *.txt
 
 grep
+    grep "text" filename
 
 awk
 
