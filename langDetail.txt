@@ -40,6 +40,13 @@ python
         print(parameter)
 
 
+
+    # string lib
+    ['s', 'df'] = 's df'.split(' ')
+    1 = 'sfds'.find('fd')    
+
+
+
     # dimention
     npObj.shape
 

@@ -4,6 +4,9 @@ find
 grep
     grep "text" filename
 
+unzip 
+    unzip -v xxx.zip                # not unzip, just view files in it
+    unzip xxx.zip -d folderName     # unzip to the given folder
 awk
 
 wc
