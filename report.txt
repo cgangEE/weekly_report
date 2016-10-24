@@ -45,6 +45,10 @@ oct18 -
 
     download tattoo segmentation dataset
 
-    to write a cleaning py script to clean checkpoint folder in fb.resnet.torch
+    to write a cleaning py script to clean checkpoint folder in fb.resnet.torch [to do]
 
-    use edgebox to generate bounding box for tattoo image
+    use edgebox to generate bounding box for tattoo image   [to do]
+
+    proposal: pre-train with flickr, fine-tune with bounding box [to do]
+
+
