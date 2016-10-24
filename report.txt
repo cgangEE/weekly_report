@@ -42,3 +42,9 @@ oct18 -
     detected 9 tattoo in 852 non-tattoo images.
     false negative rate is (1148-530)/1148 = 53.833%
     false positive rate is 9/852 = 1.0563%
+
+    download tattoo segmentation dataset
+
+    to write a cleaning py script to clean checkpoint folder in fb.resnet.torch
+
+    use edgebox to generate bounding box for tattoo image
