@@ -59,4 +59,5 @@ oct18 - oct25
 oct26 -
     fine-tuned a faster r-cnn detector 120 thousand iterators with 80% zagreb dataset, 20% dataset tested gain AP is 0.5541, precision-recall curve is tattPR-Curve.png
 
-    Because tattDL resize the max edge of input image to 500, it's inconvenient to calculate AP and PR curve, therefore refuse to do
+    Because tattDL resize the max edge of input image to 500, 
+    it's inconvenient to calculate AP and PR curve, therefore refuse to do
