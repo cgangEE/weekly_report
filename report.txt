@@ -39,7 +39,7 @@ nist, flickr tattoo detection experiment
 
 
 oct18 - oct25
-    resnet-152, flickr10000, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 1-fold test error rate=2.9
+    resnet-152, flickr10000, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 1-fold test error rate=2.9%
 
     resnet-200, flickr10000, epcho=38, LR=0.0001, momentum=0.9, weightDecay=1e-4, 1-fold test error rate=2.6%
 
@@ -48,7 +48,7 @@ oct18 - oct25
     false negative rate is (1148-530)/1148 = 53.833%
     false positive rate is 9/852 = 1.0563%
 
-    download tattoo segmentation dataset zagreb
+    download tattoo segmentation dataset zagreb with 890 images
 
     wrote a cleaning py script to clean checkpoint folder in fb.resnet.torch 
 
@@ -57,4 +57,6 @@ oct18 - oct25
     proposal: pre-train with flickr, fine-tune with bounding box [to do]
 
 oct26 -
-    fine-tuned a faster rcnn detector with zagreb dataset
+    fine-tuned a faster r-cnn detector 120 thousand iterators with 80% zagreb dataset, 20% dataset tested gain AP is 0.5541, precision-recall curve is tattPR-Curve.png
+
+    Because tattDL resize the max edge of input image to 500, it's inconvenient to calculate AP and PR curve, therefore refuse to do
