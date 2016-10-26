@@ -37,18 +37,24 @@ nist, flickr tattoo detection experiment
     resnet-34, flickr-nist, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 5-fold test error rate=2.214%
 
 
-oct18 - 
+
+oct18 - oct25
+    resnet-152, flickr10000, epcho=40, LR=0.0001, momentum=0.9, weightDecay=1e-4, 1-fold test error rate=2.9
+
+    resnet-200, flickr10000, epcho=38, LR=0.0001, momentum=0.9, weightDecay=1e-4, 1-fold test error rate=2.6%
+
     TattDL tested flickr10000 fold1, detected 530 tattoo in 1148 tattoo images,
     detected 9 tattoo in 852 non-tattoo images.
     false negative rate is (1148-530)/1148 = 53.833%
     false positive rate is 9/852 = 1.0563%
 
-    download tattoo segmentation dataset
+    download tattoo segmentation dataset zagreb
 
-    to write a cleaning py script to clean checkpoint folder in fb.resnet.torch [to do]
+    wrote a cleaning py script to clean checkpoint folder in fb.resnet.torch 
 
     use edgebox to generate bounding box for tattoo image   [to do]
 
     proposal: pre-train with flickr, fine-tune with bounding box [to do]
 
-
+oct26 -
+    fine-tuned a faster rcnn detector with zagreb dataset
