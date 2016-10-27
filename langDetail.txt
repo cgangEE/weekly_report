@@ -73,6 +73,10 @@ lua
     end
 
 
+    --dimention
+    tensor:size()
+
+
 matlab  
     % for loop
     for i = 1:n
