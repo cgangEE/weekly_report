@@ -57,7 +57,16 @@ oct18 - oct25
     proposal: pre-train with flickr, fine-tune with bounding box [to do]
 
 oct26 -
-    fine-tuned a faster r-cnn detector 120 thousand iterators with 80% zagreb dataset, 
-20% dataset tested gain AP is 0.5541, precision-recall curve is tattPR-Curve.png
-    Because tattDL resize the max edge of input image to 500, 
-it's inconvenient to calculate AP and PR curve, therefore refuse to do
+    fine-tuned a faster r-cnn detector 120 thousand iterators with 80% zagreb dataset
+        20% dataset tested gain AP is 0.5541
+        precision-recall curve is tattPR-Curve.png
+
+    Because tattDL resize the max edge of input image to 500, it's inconvenient to calculate AP and PR curve [refused]
+
+    there are two plan to get tattoo feature map 
+        first: split a image into two 224x224 image, and combine their feature map
+        second: write a roi-pooling layer to crop with different size image and gain same size feature map
+
+
+
+
