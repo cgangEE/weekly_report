@@ -66,6 +66,7 @@ oct26 -
     there are two plan to get tattoo feature map 
         first: split a image into two 224x224 image, and combine their feature map
         second: write a roi-pooling layer to crop with different size image and gain same size feature map
+            [failed] because the sizes of input images are differe, they cannot be combined to one batch
 
 
 
