@@ -7,6 +7,10 @@ grep
 unzip 
     unzip -v xxx.zip                # not unzip, just view files in it
     unzip xxx.zip -d folderName     # unzip to the given folder
+
+
+mount -ro ntfs-3g /dev/sdb1 /media/cgangee/METIRALS     #read only
+
 awk
 
 wc
