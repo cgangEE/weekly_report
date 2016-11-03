@@ -48,9 +48,13 @@ python
     1 = 'sfds'.find('fd')    
 
 
-
     # dimention
     npObj.shape
+
+    # block comment
+    '''
+        block
+    '''
 
 lua 
     --for loop
@@ -68,6 +72,8 @@ lua
         print(line)
     end
 
+    --write file
+
 
     --function
     function func(parameter)
@@ -78,6 +84,10 @@ lua
     --dimention
     tensor:size()
 
+    --block comment
+    --[[
+        block
+    --]]
 
 matlab  
     % for loop
@@ -87,6 +97,22 @@ matlab
 
     % start index
     1
+
+
+    % if condition
+    if expression
+        statements
+    elseif expression
+        statements
+    else
+        statements
+    end
+
+
+    % function
+    function ret = func(parameter)
+    end
+
 
     % dimention
     size(mat)
