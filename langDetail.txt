@@ -109,6 +109,12 @@ matlab
     end
 
 
+    % image related
+    I = imread(imgName);
+    imshow(I);
+
+
+
     % function
     function ret = func(parameter)
     end

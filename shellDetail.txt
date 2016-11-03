@@ -11,6 +11,10 @@ unzip
 
 mount -ro ntfs-3g /dev/sdb1 /media/cgangee/METIRALS     #read only
 
+tar -czf dir.tar.gz dir/    # compress a dir
+
+tar -xzvf dir.tar.gz        # decompress a file   -v show the process
+
 awk
 
 wc
