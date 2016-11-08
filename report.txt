@@ -56,7 +56,7 @@ oct18 - oct25
 
     proposal: pre-train with flickr, fine-tune with bounding box [to do]
 
-oct26 -
+oct26 - nov01
     fine-tuned a faster r-cnn detector 120 thousand iterators with 80% zagreb dataset
         20% dataset tested gain AP is 0.5541
         precision-recall curve is tattPR-Curve.png
@@ -69,6 +69,8 @@ oct26 -
             [failed] because the sizes of input images are differe, they cannot be combined to one batch
         third (easiest one): remove model's fc layer, just give a random size image to the model, and get the feature map 
 
+nov02 - 
+    fine-tuned a FCN segmentater after 58000 iterations with 80% zagreb dataset, gain mean IU 0.796 tested from 20% zagreb dataset.
 
 
 
