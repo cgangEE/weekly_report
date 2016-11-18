@@ -8,6 +8,8 @@ unzip
     unzip -v xxx.zip                # not unzip, just view files in it
     unzip xxx.zip -d folderName     # unzip to the given folder
 
+zip -r folder.zip folder/			# zip folder to file
+
 
 mount -ro ntfs-3g /dev/sdb1 /media/cgangee/METIRALS     #read only
 
@@ -17,6 +19,11 @@ chown -hR myusername:myusername folder/     #change folder's owner recursively
 tar -czf dir.tar.gz dir/    # compress a dir
 
 tar -xzvf dir.tar.gz        # decompress a file   -v show the process
+
+tee file.txt 				# read the std input and save it as file
+
+passwd username				# change username's password
+
 
 awk
 

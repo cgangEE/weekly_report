@@ -69,9 +69,10 @@ oct26 - nov01
             [failed] because the sizes of input images are differe, they cannot be combined to one batch
         third (easiest one): remove model's fc layer, just give a random size image to the model, and get the feature map 
 
-nov02 - 
+nov02 - nov15
     fine-tuned a FCN segmentater after 58000 iterations with 80% zagreb dataset, gain mean IU 0.796 tested from 20% zagreb dataset.
 
+nov15 - 
 
 
 
