@@ -1,5 +1,5 @@
 import os
-os.environ['GLOG_minloglevel'] = 1			# set minimul log level
+os.environ['GLOG_minloglevel'] = '1'		# set minimul log level
 
 
 import sys
