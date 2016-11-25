@@ -72,7 +72,10 @@ oct26 - nov01
 nov02 - nov15
     fine-tuned a FCN segmentater after 58000 iterations with 80% zagreb dataset, gain mean IU 0.796 tested from 20% zagreb dataset.
 
-nov15 - 
+nov15 - nov25
+	(1) fine-tuned pvanet using end-to-end method with just pedestrian box of 80% train set, testing results with 10% val set is bad.
+	(2) fine-tuned faster-rcnn using alternative method with just pedestrian box of 90% trainval set, MAP of testing results with 10% test set is  0.8734582810
+	(3) wrote tattoo annotation tool manual V1.0
 
 
 
