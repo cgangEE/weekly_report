@@ -73,9 +73,58 @@ nov02 - nov15
     fine-tuned a FCN segmentater after 58000 iterations with 80% zagreb dataset, gain mean IU 0.796 tested from 20% zagreb dataset.
 
 nov15 - nov25
-	(1) fine-tuned pvanet using end-to-end method with just pedestrian box of 80% train set, testing results with 10% val set is bad.
-	(2) fine-tuned faster-rcnn using alternative method with just pedestrian box of 90% trainval set, MAP of testing results with 10% test set is  0.8734582810
-	(3) wrote tattoo annotation tool manual V1.0
+	(1) wrote tattoo annotation tool manual V1.0
+	(2) fine-tuned pvanet using end-to-end method with just pedestrian box of 80% train set, testing results with 10% val set is bad.
+	(3) fine-tuned faster-rcnn using alternative method with just pedestrian box of 90% trainval set, MAP of testing results with 10% test set is  0.8734582810
+
+nov26 - nov28
+	(1) faster r-cnn end2end add cg_ prefix and remove normalize of cls_loss layer, not ok
+	(2) faster r-cnn end2end remove cg_ prefix
 
 
+dec 12 - dec
+	fine-tuned pvanet with psdbVeh after 80000 iterations
+		net: 0.054s		preproc: 0.018s
+
+		AP = 0.897076
+			Recall = 0.740426, Miss Rate = 0.259574 @ FPPI = 0.1
+		AP = 0.557737
+			Recall = 0.400043, Miss Rate = 0.599957 @ FPPI = 0.1
+		AP = 0.819933
+			Recall = 0.616888, Miss Rate = 0.383112 @ FPPI = 0.1
+		AP = 0.875562
+			Recall = 0.699218, Miss Rate = 0.300782 @ FPPI = 0.1
+		AP = 0.971466
+			Recall = 0.964709, Miss Rate = 0.035291 @ FPPI = 0.1
+
+	compressed above net and the accuracy didn't loss much
+		net: 0.039s		preproc: 0.019s
+
+		AP = 0.894791
+			Recall = 0.731915, Miss Rate = 0.268085 @ FPPI = 0.1
+		AP = 0.549058
+			Recall = 0.384686, Miss Rate = 0.615314 @ FPPI = 0.1
+		AP = 0.813462
+			Recall = 0.607932, Miss Rate = 0.392068 @ FPPI = 0.1
+		AP = 0.877224
+			Recall = 0.693319, Miss Rate = 0.306681 @ FPPI = 0.1
+		AP = 0.971521
+			Recall = 0.962580, Miss Rate = 0.037420 @ FPPI = 0.1
+
+	psdb3 combine head, upper body without head, below body to pedestrian box
+
+		for each head find nearest parts, each parts distance < sqrt(400), 
+			p(3 parts) > 0.5, ap = 0.574, recall = 0.487 @ FPPI = 0.1	
+
+		for each upper body find nearest parts, each parts distance < sqrt(400), 
+			p(3 parts) > 0.5, ap = 0.684, recall = 0.608 @ FPPI = 0.1	
+		
+		for each upper body find nearest parts, each parts distance <sqrt(1100), 
+			p(3 parts) > 0.5, ap = 0.696, recall = 0.631 @ FPPI = 0.1	
+
+		for each below body find nearest parts, each parts distance <sqrt(1100),
+			p(3 parts) > 0.5, ap = 0.696, recall = 0.659 @ FPPI = 0.1
+
+		combine 3 generated pedestrian boxes, and use non-maximum supression,
+			ap = 0.685, recall = 0.631 @ FPPI = 0.1
 
