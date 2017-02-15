@@ -23,7 +23,25 @@ c++
 
 	//opencv 
 
+	// clear
+		string vector
+	// non clear
 
+
+	//algorithm
+	equal(a.begin(), a.end(), b.begin());
+	lower_bound(a.begin(), a.end(), val);
+	upper_bound(a.begin(), a.end(), val);
+
+	//stack
+		void push(T);
+		void pop();
+		T top();
+	//queue
+		T front();
+		T back();
+		void push(T);
+		void pop()
 
 python  
     # for loop
