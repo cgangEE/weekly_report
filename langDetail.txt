@@ -14,6 +14,7 @@ shell
 		comment body
 	commentMark
 
+
 c++     
     //for loop
     for (int i=0; i<n; ++i){
@@ -35,6 +36,25 @@ c++
 	lower_bound(val) return iter >= val
 	upper_bounder(val) return iter > val
 
+	// clear
+		string vector
+	// non clear
+
+
+	//algorithm
+	equal(a.begin(), a.end(), b.begin());
+	lower_bound(a.begin(), a.end(), val);
+	upper_bound(a.begin(), a.end(), val);
+
+	//stack
+		void push(T);
+		void pop();
+		T top();
+	//queue
+		T front();
+		T back();
+		void push(T);
+		void pop()
 
 python  
     # for loop
@@ -87,9 +107,6 @@ python
 	person = Person()
 	print(person.money)
 
-	
-
-		
 
     # dimention
     npObj.shape
