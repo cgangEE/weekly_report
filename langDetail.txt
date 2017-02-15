@@ -55,6 +55,12 @@ c++
 		T back();
 		void push(T);
 		void pop()
+	//string
+		int atoi(str, pos, base)
+		long atol(str, pos, base)
+		long long atoll(str, pos, base)
+		
+		string to_string(int | long | long long | float| double |...)
 
 python  
     # for loop
