@@ -96,6 +96,11 @@ python
 	for parent, dirnames, filenames in os.walk(folder):
 
 
+	#file remove and move
+	os.remove(fullFilename)
+	os.rename(srcFullFilename, dstFullFilename)
+
+
 	#join path
 	os.path.join('dir', 'filename')
 
