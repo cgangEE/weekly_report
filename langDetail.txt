@@ -14,6 +14,9 @@ shell
 		comment body
 	commentMark
 
+vim
+	#substitute
+	:%s/A/B/g		#substitute string A to string B
 
 c++     
     //for loop

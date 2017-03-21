@@ -30,6 +30,10 @@ du -hs folder/				# show the total disk size of the folder
 ssh-copy-id id@server		# copy ssh-key to the server, therefore log in 
 id@server's password:			# without password
 
+du
+
+fdisk 
+
 awk
 
 wc
