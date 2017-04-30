@@ -36,7 +36,7 @@ id@server's password:			# without password
 
 du
 
-fdisk 
+sudo fdisk -l				# -l --list, list the partition tables for the specified devices
 
 awk
 
