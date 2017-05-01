@@ -5,3 +5,9 @@ os.environ['GLOG_minloglevel'] = '1'		# set minimul log level
 import sys
 sys.stdout.flush()							# flush stdout
 
+
+solver.snapshot()							# snapshot caffemodel and solverstate
+solver.restore('*.solverstate')				# restore solverstate
+solver.net.copy_from('*.caffemodel')		# copy net parameter from caffemodel
+
+

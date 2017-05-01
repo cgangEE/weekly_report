@@ -96,9 +96,13 @@ python
 	for parent, dirnames, filenames in os.walk(folder):
 
 
-	#file remove and move
+	#file copy, remove and move
+	shutil.copyfile(src, dst)
 	os.remove(fullFilename)
+		# cannot move file between different device		
 	os.rename(srcFullFilename, dstFullFilename)
+
+
 
 
 	#join path
