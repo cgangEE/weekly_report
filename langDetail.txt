@@ -96,11 +96,12 @@ python
 	for parent, dirnames, filenames in os.walk(folder):
 
 
-	#file copy, remove and move
+	#file copy, remove, move and create symbolic link
 	shutil.copyfile(src, dst)
 	os.remove(fullFilename)
-		# cannot move file between different device		
 	os.rename(srcFullFilename, dstFullFilename)
+		# cannot move file between different device		
+	os.symlink(src, dstLink)
 
 
 
