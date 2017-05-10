@@ -52,3 +52,7 @@ touch
 
 mkdir
 
+# rpm package install
+sudo apt install alien
+sudo alien xxx.rmp
+sudo dpkg -i xxx.deb
