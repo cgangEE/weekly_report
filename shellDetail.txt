@@ -56,3 +56,15 @@ mkdir
 sudo apt install alien
 sudo alien xxx.rmp
 sudo dpkg -i xxx.deb
+
+
+# samba
+					# edit 
+sudo vim /etc/samba/smb.conf
+					# add samba to firewall rule and reload it
+firewall-cmd --permanent --zone=public --add-service=samba  
+firewall-cmd --reload
+					# restart and enable samble
+systemctl restart smb nmb
+systemctl enable smb
+

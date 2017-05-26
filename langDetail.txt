@@ -64,6 +64,19 @@ c++
 		long long atoll(str, pos, base)
 		
 		string to_string(int | long | long long | float| double |...)
+	//sort
+		struct cmp{
+			vector<int> *a;
+			cmp(vector<int> &a){
+				this->a = &a;
+			}
+			bool operator()(int i, int j)const{
+				return (*a)[i] < (*a)[j];
+			}
+		}
+		vector<int> a;
+		vecotr<int> idx;
+		sort(idx.begin(), idx.end(), cmp(a));
 
 python  
     # for loop
