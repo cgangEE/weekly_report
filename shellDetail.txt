@@ -11,6 +11,7 @@ unzip
 zip -r folder.zip folder/			# zip folder to file
 
 unrar e file.rar					# unrar rar file to current folder
+unrar x file.rar					# unrar rar file
 
 mount -ro ntfs-3g /dev/sdb1 /media/cgangee/METIRALS     #read only
 
