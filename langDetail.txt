@@ -158,6 +158,25 @@ python
         block
     '''
 
+	# process xml
+	import xml.etree.ElementTree as ET
+	tree = ET.parse(filename)
+	root = tree.getroot()
+	for elem in root.findall('object')
+		if elem.find('name') == 'ignore':
+			root.remove(elem)
+	tree.write(detFilename)
+
+	# copy
+	import copy
+	class f:
+		x = 1
+	l = [f(), f()]
+	a = copy.copy(l)
+	b = copy.deepcopy(l)
+	b[0].x = 2		# b = [x = 2, x = 1]	l = [x = 1, x = 1] # deep
+	a[0].x = 3 		# a = [x = 3, x = 1]	l = [x = 3, x = 1] # shallow
+
 lua 
     --for loop
     for i = 1,n do
