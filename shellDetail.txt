@@ -18,6 +18,12 @@ mount -ro ntfs-3g /dev/sdb1 /media/cgangee/METIRALS     #read only
 chown -hR myusername:myusername folder/     #change folder's owner recursively
                                             #-R recursive -h just change symbolic
 
+printf
+
+useradd
+
+userdel
+
 tar -czf dir.tar.gz dir/    # compress a dir
 
 tar -xzvf dir.tar.gz        # decompress a file   -v show the process
@@ -39,7 +45,10 @@ du
 
 sudo fdisk -l				# -l --list, list the partition tables for the specified devices
 
-awk
+awk 'BEGIN {FS=":"} $3 < 1 {print $1 "\t" $3}'	# FS: field separator
+awk 'BEGIN {FS=":"} $3>=500 {print $3}' /etc/passwd	# print all users
+
+cut 
 
 wc
 
