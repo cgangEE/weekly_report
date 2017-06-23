@@ -31,3 +31,9 @@ x: N * 1
 y: N * 1
 
 
+void caffe_cpu_axpby<float>(const int N, const float alpha, const float* X,
+                            const float beta, float* Y) {
+  cblas_saxpby(N, alpha, X, 1, beta, Y, 1);
+}
+Y = alpha * X + beta * Y
+
