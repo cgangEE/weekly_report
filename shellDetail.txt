@@ -15,6 +15,9 @@ unrar x file.rar					# unrar rar file
 
 mount -ro ntfs-3g /dev/sdb1 /media/cgangee/METIRALS     #read only
 
+umount -v /media/cgangee/X		# umount depending on a mount point
+								# -v verbose
+
 chown -hR myusername:myusername folder/     #change folder's owner recursively
                                             #-R recursive -h just change symbolic
 
