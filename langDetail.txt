@@ -182,6 +182,13 @@ python
 	print(PIL.Image.open(imagename).size)
 
 
+	# cPickle
+	import cPickle
+	with open(filename, 'wb') as fOutput:			# write object
+		cPickle.dump(object , fOutput, cPickle.HIGHEST_PROTOCOL)
+
+	with open(filename, 'rb') as fInput:			# load object
+		object = cPickle.load(fInput)
 	
 lua 
     --for loop
