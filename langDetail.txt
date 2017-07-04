@@ -177,6 +177,12 @@ python
 	b[0].x = 2		# b = [x = 2, x = 1]	l = [x = 1, x = 1] # deep
 	a[0].x = 3 		# a = [x = 3, x = 1]	l = [x = 3, x = 1] # shallow
 
+	# get image size 	
+	import PIL
+	print(PIL.Image.open(imagename).size)
+
+
+	
 lua 
     --for loop
     for i = 1,n do
@@ -243,4 +249,14 @@ matlab
 
     % dimention
     size(mat)
+
+
+	% run matlab in terminal
+	matlab -nodisplay
+
+
+	% show variable in memory
+	who
+	whos
     
+
