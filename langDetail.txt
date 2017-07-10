@@ -58,6 +58,11 @@ c++
 		T back();
 		void push(T);
 		void pop()
+	//priority_queue
+		queue<int> que; // big root heap	
+		queue<int, vector<int>, less<int>> que; // big root heap
+		queue<int, vector<int>, greater<int>> que; // small root heap
+
 	//string
 		int atoi(str, pos, base)
 		long atol(str, pos, base)
