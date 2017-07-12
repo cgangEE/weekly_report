@@ -16,7 +16,8 @@ shell
 
 vim
 	#substitute
-	:%s/A/B/g		#substitute string A to string B
+	:%s/A/B/g		#substitute string A to string B, from top to end
+	:%s/A/B/gc		#substitute string A to string B, from top to end, but ask for confirmation first
 
 c++     
     //for loop
