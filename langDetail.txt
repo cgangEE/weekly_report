@@ -195,6 +195,10 @@ python
 
 	with open(filename, 'rb') as fInput:			# load object
 		object = cPickle.load(fInput)
+
+	# opencv
+	import cv2
+	im = cv2.imread(imageName)		# im is np.uint8 np.array type
 	
 lua 
     --for loop
