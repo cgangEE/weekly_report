@@ -9,15 +9,18 @@ shell
     arg1=$1
     arg2=$2
 
-	# block comment
-	:<<commentMark
-		comment body
-	commentMark
+    # block comment
+    :<<commentMark
+        comment body
+    commentMark
 
 vim
-	#substitute
-	:%s/A/B/g		#substitute string A to string B, from top to end
-	:%s/A/B/gc		#substitute string A to string B, from top to end, but ask for confirmation first
+    #substitute
+    :%s/A/B/g        #substitute string A to string B, from top to end
+    :%s/A/B/gc        #substitute string A to string B, from top to end, but ask for confirmation first
+
+	# mac's vimrc location
+	/usr/share/vim/vimrc
 
 c++     
     //for loop
@@ -30,65 +33,66 @@ c++
     0
 
 
-	//opencv 
+    //opencv 
 
-		//change type	
-		Mat B;
-		A.convertTo(B,CV_8UC1);
+        //change type    
+        Mat B;
+        A.convertTo(B,CV_8UC1);
 
-	// bound for set, multiset, map, multimap
-	lower_bound(val) return iter >= val
-	upper_bounder(val) return iter > val
+    // bound for set, multiset, map, multimap
+    lower_bound(val) return iter >= val
+    upper_bounder(val) return iter > val
 
-	// clear
-		string vector
-	// non clear
+    // clear
+    string vector
+
+    // non clear
 
 
-	//algorithm
-	equal(a.begin(), a.end(), b.begin());
-	lower_bound(a.begin(), a.end(), val);
-	upper_bound(a.begin(), a.end(), val);
+    //algorithm
+    equal(a.begin(), a.end(), b.begin());
+    lower_bound(a.begin(), a.end(), val);
+    upper_bound(a.begin(), a.end(), val);
 
-	//stack
-		void push(T);
-		void pop();
-		T top();
-	//queue
-		T front();
-		T back();
-		void push(T);
-		void pop()
-	//priority_queue
-		queue<int> que; // big root heap	
-		queue<int, vector<int>, less<int>> que; // big root heap
-		queue<int, vector<int>, greater<int>> que; // small root heap
+    //stack
+        void push(T);
+        void pop();
+        T top();
+    //queue
+        T front();
+        T back();
+        void push(T);
+        void pop()
+    //priority_queue
+        queue<int> que; // big root heap    
+        queue<int, vector<int>, less<int>> que; // big root heap
+        queue<int, vector<int>, greater<int>> que; // small root heap
 
-	//string
-		int atoi(str, pos, base)
-		long atol(str, pos, base)
-		long long atoll(str, pos, base)
-		
-		string to_string(int | long | long long | float| double |...)
-	//sort
-		struct cmp{
-			vector<int> *a;
-			cmp(vector<int> &a){
-				this->a = &a;
-			}
-			bool operator()(int i, int j)const{
-				return (*a)[i] < (*a)[j];
-			}
-		}
-		vector<int> a;
-		vecotr<int> idx;
-		sort(idx.begin(), idx.end(), cmp(a));
+    //string
+        int atoi(str, pos, base)
+        long atol(str, pos, base)
+        long long atoll(str, pos, base)
+        
+        string to_string(int | long | long long | float| double |...)
+    //sort
+        struct cmp{
+            vector<int> *a;
+            cmp(vector<int> &a){
+                this->a = &a;
+            }
+            bool operator()(int i, int j)const{
+                return (*a)[i] < (*a)[j];
+            }
+        }
+        vector<int> a;
+        vecotr<int> idx;
+        sort(idx.begin(), idx.end(), cmp(a));
 
-	//opencv		
-		#include <opencv2/core/core.hpp>
-		#include <opencv2/highgui/highgui.hpp>
-		#include <opencv2/imgproc/imgproc.hpp>
-		using namespace cv;
+    //opencv        
+        #include <opencv2/core/core.hpp>
+        #include <opencv2/highgui/highgui.hpp>
+        #include <opencv2/imgproc/imgproc.hpp>
+        using namespace cv;
 
 python  
     # for loop
@@ -117,43 +121,43 @@ python
     1 = 'sfds'.find('fd')    
 
 
-	#travel folder recursively
-	for parent, dirnames, filenames in os.walk(folder):
+    #travel folder recursively
+    for parent, dirnames, filenames in os.walk(folder):
 
 
-	#file copy, remove, move and create symbolic link
-	shutil.copyfile(src, dst)
-	os.remove(fullFilename)
-	os.rename(srcFullFilename, dstFullFilename)
-		# cannot move file between different device		
-	os.symlink(src, dstLink)
+    #file copy, remove, move and create symbolic link
+    shutil.copyfile(src, dst)
+    os.remove(fullFilename)
+    os.rename(srcFullFilename, dstFullFilename)
+        # cannot move file between different device        
+    os.symlink(src, dstLink)
 
 
 
-	# sort list
-	x = [1, 3, 2]
-	x = sorted(x)	# then x = [1, 2, 3]
-	
+    # sort list
+    x = [1, 3, 2]
+    x = sorted(x)    # then x = [1, 2, 3]
+    
 
-	#join path
-	os.path.join('dir', 'filename')
-
-
-	#file exist
-	os.path.isfile(filename)
+    #join path
+    os.path.join('dir', 'filename')
 
 
-	#regard function as attribute
-	@property
-	class Person(object):
-		def __int__(self):
-			self._money = 100
+    #file exist
+    os.path.isfile(filename)
 
-		def money(self):
-			return self._money
 
-	person = Person()
-	print(person.money)
+    #regard function as attribute
+    @property
+    class Person(object):
+        def __int__(self):
+            self._money = 100
+
+        def money(self):
+            return self._money
+
+    person = Person()
+    print(person.money)
 
 
     # dimention
@@ -164,42 +168,42 @@ python
         block
     '''
 
-	# process xml
-	import xml.etree.ElementTree as ET
-	tree = ET.parse(filename)
-	root = tree.getroot()
-	for elem in root.findall('object')
-		if elem.find('name') == 'ignore':
-			root.remove(elem)
-	tree.write(detFilename)
+    # process xml
+    import xml.etree.ElementTree as ET
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    for elem in root.findall('object')
+        if elem.find('name') == 'ignore':
+            root.remove(elem)
+    tree.write(detFilename)
 
-	# copy
-	import copy
-	class f:
-		x = 1
-	l = [f(), f()]
-	a = copy.copy(l)
-	b = copy.deepcopy(l)
-	b[0].x = 2		# b = [x = 2, x = 1]	l = [x = 1, x = 1] # deep
-	a[0].x = 3 		# a = [x = 3, x = 1]	l = [x = 3, x = 1] # shallow
+    # copy
+    import copy
+    class f:
+        x = 1
+    l = [f(), f()]
+    a = copy.copy(l)
+    b = copy.deepcopy(l)
+    b[0].x = 2        # b = [x = 2, x = 1]    l = [x = 1, x = 1] # deep
+    a[0].x = 3         # a = [x = 3, x = 1]    l = [x = 3, x = 1] # shallow
 
-	# get image size 	
-	import PIL
-	print(PIL.Image.open(imagename).size)
+    # get image size     
+    import PIL
+    print(PIL.Image.open(imagename).size)
 
 
-	# cPickle
-	import cPickle
-	with open(filename, 'wb') as fOutput:			# write object
-		cPickle.dump(object , fOutput, cPickle.HIGHEST_PROTOCOL)
+    # cPickle
+    import cPickle
+    with open(filename, 'wb') as fOutput:            # write object
+        cPickle.dump(object , fOutput, cPickle.HIGHEST_PROTOCOL)
 
-	with open(filename, 'rb') as fInput:			# load object
-		object = cPickle.load(fInput)
+    with open(filename, 'rb') as fInput:            # load object
+        object = cPickle.load(fInput)
 
-	# opencv
-	import cv2
-	im = cv2.imread(imageName)		# im is np.uint8 np.array type
-	
+    # opencv
+    import cv2
+    im = cv2.imread(imageName)        # im is np.uint8 np.array type
+    
 lua 
     --for loop
     for i = 1,n do
@@ -268,12 +272,12 @@ matlab
     size(mat)
 
 
-	% run matlab in terminal
-	matlab -nodisplay
+    % run matlab in terminal
+    matlab -nodisplay
 
 
-	% show variable in memory
-	who
-	whos
+    % show variable in memory
+    who
+    whos
     
 
