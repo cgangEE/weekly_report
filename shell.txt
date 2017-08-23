@@ -86,4 +86,5 @@ file system check and repair
 fsck /sda1 -y	# fsck a device, -y assume yes to all fsck response
 fsck /home -y	# fsck a mount point, -y assume yes to all fsck response
 
-
+# mkfs
+mkfs.ext4 -L X /dev/sdc1    # format device /dev/sdc1 to ext4 system with label X
