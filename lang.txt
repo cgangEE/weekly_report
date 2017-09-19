@@ -201,10 +201,10 @@ python
         object = cPickle.load(fInput)
 
 
-	# json
-	ipmort json
-	with open(filename) as f:
-		data = json.load(f) 						# load json from file
+    # json
+    ipmort json
+    with open(filename) as f:
+        data = json.load(f)                         # load json from file
 
 
     # opencv
