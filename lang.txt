@@ -109,6 +109,9 @@ python
     for line in f:
         print(line)
 
+    # random integer    # return a random integer N such that a <= N <= b
+    import random
+    random.randint(a, b)    
 
     # function
     def func(parameter):
@@ -145,6 +148,12 @@ python
 
     #file exist
     os.path.isfile(filename)
+
+    #dir exist
+    os.path.isdir(dirname)
+
+    # mkdir
+    os.mkdir(dirname)
 
 
     #regard function as attribute
@@ -206,6 +215,8 @@ python
     with open(filename) as f:
         data = json.load(f)                         # load json from file
 
+    with open(filename) as f:                       # save json to file
+        json.dump(data, f)
 
     # opencv
     import cv2
