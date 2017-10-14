@@ -221,7 +221,24 @@ python
     # opencv
     import cv2
     im = cv2.imread(imageName)        # im is np.uint8 np.array type
+
+    # draw a circle in image
+    cv2.circle(image, (x,y), radius, color, thickness)     
     
+
+    # numpy 
+
+        # maximum element idx
+        return np.unravel_index(np.argmax(data), data.shape)
+
+        # 2d convolve
+        import scipy
+        scipy.signal.convolve2d(data, filter, boundary='fill', mode='same')
+
+        # fft convolve, zero padding
+        scipy.signal.fftconvolve(data, filter, mode='same')
+
+
 lua 
     --for loop
     for i = 1,n do
