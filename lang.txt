@@ -239,6 +239,10 @@ python
         scipy.signal.fftconvolve(data, filter, mode='same')
 
 
+    # plt
+        import matplotlib.pyplot as plt
+        plt.bar(x, height)
+
 lua 
     --for loop
     for i = 1,n do
