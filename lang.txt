@@ -198,7 +198,17 @@ python
 
     # get image size     
     import PIL
-    print(PIL.Image.open(imagename).size)
+    print(PIL.Image.open(imagename).size)  # 8.55e-5 sec
+
+    # opencv
+    import cv2
+    im = cv2.imread(imageName)        # im is np.uint8 np.array type
+                                      # 2.918e-3 sec
+
+    # draw a circle in image
+    cv2.circle(image, (x,y), radius, color, thickness)     
+    
+
 
 
     # cPickle
@@ -218,14 +228,6 @@ python
     with open(filename) as f:                       # save json to file
         json.dump(data, f)
 
-    # opencv
-    import cv2
-    im = cv2.imread(imageName)        # im is np.uint8 np.array type
-
-    # draw a circle in image
-    cv2.circle(image, (x,y), radius, color, thickness)     
-    
-
     # numpy 
 
         # maximum element idx
@@ -238,6 +240,11 @@ python
         # fft convolve, zero padding
         scipy.signal.fftconvolve(data, filter, mode='same')
 
+        # load string list from file
+        strList = np.loadtxt('list.txt', dtype=str))
+
+        # save string list to file
+        np.savetxt('list.txt', strList, fmt='%s')
 
     # plt
         import matplotlib.pyplot as plt
