@@ -36,3 +36,6 @@
     }
     Y = alpha * X + beta * Y
 
+
+loss layer:
+	top[0]->diff = loss_weight
