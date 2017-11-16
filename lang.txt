@@ -259,6 +259,9 @@ python
         import sys
         sys.stdout.write(str)
 
+    # remove single-dimensional entries from numpy array
+        dst = np.squeeze(array)
+
 lua 
     --for loop
     for i = 1,n do
