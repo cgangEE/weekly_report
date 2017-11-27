@@ -251,6 +251,9 @@ python
         # save string list to file
         np.savetxt('list.txt', strList, fmt='%s')
 
+        # construct an array by repeating A the number of times given by reps
+        np.tite(A, reps)
+
     # plt
         import matplotlib.pyplot as plt
         plt.bar(x, height)
