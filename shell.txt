@@ -99,3 +99,12 @@ mkfs.ext4 -L X /dev/sdc1    # format device /dev/sdc1 to ext4 system with label 
 
 # pip install with root
 pip install --user configobj
+
+
+# mac 禁用SafeSleep功能
+sudo pmset -a hibernatemode 0
+
+# mac  重新开启SafeSleep功能
+sudo pmset -a hibernatemode 3
+sudo rm /private/var/vm/sleepimage
+
