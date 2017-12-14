@@ -201,6 +201,10 @@ python
     print(PIL.Image.open(imagename).size)  # 8.55e-5 sec
 
     print(PIL.Image.open(imagename).size)  # W x H
+
+    # PIL Image read and write
+    im = PIL.Image.open(imagename)
+    im.save(imname)
                                           
 
     # opencv
