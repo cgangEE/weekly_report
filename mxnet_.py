@@ -17,3 +17,12 @@ mod = mx.mod.Module(symbol = symbol, context = mx.cpu(),
         data_names = ['data'], label_names = ['softmax_label'])
 arg_params, aux_params = mod.get_params()
 
+
+# mx.io.DataBatch
+for data_batch in DetRecordIter() or mx.io.DataIter():   
+    data_batch.data : NDArray list
+    data_batch.label : NDArray list
+    data_batch.pad : the number of examples padded at the end of a batch
+    data_batch.index : the example indices in this batch
+    ...
+

@@ -144,6 +144,10 @@ with open(filename) as f:                       # save json to file
     json.dump(data, f)
 
 # numpy 
+    # swap numpy array axis
+    img.shape : (123, 456, 3)
+    img.transpose(2, 0, 1).shape : (3, 123, 456)
+
 
     # maximum element idx
     return np.unravel_index(np.argmax(data), data.shape)

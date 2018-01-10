@@ -108,3 +108,6 @@ sudo pmset -a hibernatemode 0
 sudo pmset -a hibernatemode 3
 sudo rm /private/var/vm/sleepimage
 
+# wget 断点续传
+-c 断点续传
+-t 0 反复尝试的次数，0为不限次数
