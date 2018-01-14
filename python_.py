@@ -125,6 +125,13 @@ im.save(imname)
     gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 
+    # capture
+    capture = cv2.VideoCapture(0)
+    while True:
+        ret, img = capture.read()
+        cv2.imshow('x', img)
+        cv2.waitKey(1)
+
 
 # cPickle
 import cPickle
