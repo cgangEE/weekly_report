@@ -186,3 +186,10 @@ with open(filename) as f:                       # save json to file
 # remove single-dimensional entries from numpy array
     dst = np.squeeze(array)
 
+# argument parse
+    import argparse
+    parser = argparse.ArgumentParser(description='ft up')
+    parser.add_argument('--ft', dest='ft', type=str)
+    args = parser.parse_args()
+
+
