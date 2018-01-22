@@ -111,3 +111,20 @@ sudo rm /private/var/vm/sleepimage
 # wget 断点续传
 -c 断点续传
 -t 0 反复尝试的次数，0为不限次数
+
+
+# split
+split -l 100 file.txt [prefix]
+将file.txt文件进行切割，每个文件有100行
+prefix 为分割后产生文件名前缀
+
+
+# shuf
+
+# ftp
+ftp acm.zzu.edu.cn
+input username and password 
+cd file
+put localfile
+
+

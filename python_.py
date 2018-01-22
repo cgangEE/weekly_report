@@ -192,4 +192,6 @@ with open(filename) as f:                       # save json to file
     parser.add_argument('--ft', dest='ft', type=str)
     args = parser.parse_args()
 
-
+# get imported module path
+    import module
+    print module.__file__
