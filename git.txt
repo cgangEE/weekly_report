@@ -1,0 +1,12 @@
+# update local to server
+    git add .
+    git commit -m 'comment something'
+    git push origin master
+
+# add a branch
+    git checkout -b branch-name
+    git push origin brach-name
+
+
+# git clone to specific directory    
+    git clone git@xxx:xxx.git directory
