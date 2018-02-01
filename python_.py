@@ -32,15 +32,6 @@ def func(parameter):
 for parent, dirnames, filenames in os.walk(folder):
 
 
-#file copy, remove, move and create symbolic link
-shutil.copyfile(src, dst)
-os.remove(fullFilename)
-os.rename(srcFullFilename, dstFullFilename)
-    # cannot move file between different device        
-os.symlink(src, dstLink)
-
-
-
 # sort list
 x = [1, 3, 2]
 x = sorted(x)    # then x = [1, 2, 3]
@@ -48,6 +39,14 @@ x = sorted(x)    # then x = [1, 2, 3]
 
 #join path
 os.path.join('dir', 'filename')
+
+
+#file copy, remove, move and create symbolic link
+shutil.copyfile(src, dst)
+os.remove(fullFilename)
+os.rename(srcFullFilename, dstFullFilename)
+    # cannot move file between different device        
+os.symlink(src, dstLink)
 
 
 #file exist

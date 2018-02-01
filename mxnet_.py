@@ -26,3 +26,26 @@ for data_batch in DetRecordIter() or mx.io.DataIter():
     data_batch.index : the example indices in this batch
     ...
 
+
+
+# change fc layer's num classes
+import mxnet as mx
+
+def changeFC(num_classes):
+  symbol, arg_params, aux_params = mx.model.load_checkpoint('huoshan_money_social_events_resnet-50_rgb', 0)
+  all_layers = symbol.get_internals()
+
+  net = all_layers['rgb_dropout_0.50_3_output']
+  net = mx.symbol.FullyConnected(data = net, num_hidden = num_classes, name = 'rgb_cnn_fc_cls_new')
+  net = mx.symbol.SoftmaxOutput(data = net, name = 'rgb_cnn_softmax')
+
+  new_args = dict({k:arg_params[k] for k in arg_params if 'rgb_cnn_fc_cls' not in k})
+
+  mod = mx.mod.Module(symbol=net, context=mx.cpu(), label_names=None, data_names=['rgb_data'])
+  mod.bind(for_training=False, data_shapes=[('rgb_data', (60,5,3,224,224))], label_shapes=mod._label_shapes)
+  mod.set_params(new_args, aux_params, allow_missing=True)
+  mod.save_checkpoint('huoshan_social_money', 0)
+
+if __name__ == '__main__':
+  changeFC(2)
+
