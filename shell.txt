@@ -127,4 +127,8 @@ input username and password
 cd file
 put localfile
 
+# axel 多线程下载工具
+axel url -n thread_num  -o output_name
+下载url的文件，用thread_num个线程，将文件保存为output_name
+
 
