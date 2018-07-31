@@ -174,6 +174,9 @@ with open(filename) as f:                       # save json to file
     # construct an array by repeating A the number of times given by reps
     np.tite(A, reps)
 
+    # return sorted 1D array of commom and unique elements
+    np.intersect1d(arr1, arr2)
+
 # plt
     import matplotlib.pyplot as plt
     plt.bar(x, height)
